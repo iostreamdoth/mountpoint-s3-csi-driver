@@ -196,7 +196,7 @@ func passthroughEnv() []string {
 	webIdentityFile := os.Getenv(webIdentityTokenEnv)
 	awsRoleArn := os.Getenv(roleArnEnv)
 	if webIdentityFile != "" {
-		env = append(env, webIdentityTokenEnv+"="+hostTokenPath)
+		env = append(env, webIdentityTokenEnv+"="+webIdentityFile)
 		env = append(env, roleArnEnv+"="+awsRoleArn)
 	}
 	region := os.Getenv(regionEnv)
