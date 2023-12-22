@@ -4,9 +4,3 @@ namespace: kube-system
 resources:
   - csidriver.yaml
   - node-daemonset.yaml
-  - node-serviceaccount.yaml
-secretGenerator:
-  - name: aws-credentials
-    behavior: create
-    literals:
-      - dummy=dummy
