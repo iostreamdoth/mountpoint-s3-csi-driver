@@ -18,7 +18,7 @@ spec:
     spec:
       nodeSelector:
         kubernetes.io/os: linux
-      serviceAccountName: s3-csi-driver-sa
+      serviceAccountName: default
       priorityClassName: system-node-critical
       tolerations:
         - key: CriticalAddonsOnly
